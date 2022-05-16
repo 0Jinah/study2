@@ -1,0 +1,19 @@
+GET http://localhost:8080/study2/example1?a=a1&b=b1
+// a: a1, b: b1
+###
+POST http://localhost:8080/study2/example2
+Content-Type: application/json
+
+{"a": "a2", "b": "b2"}
+// a: a2, b: b2
+###
+POST http://localhost:8080/study2/example3/a3
+Content-Type: application/x-www-form-urlencoded
+
+b=b3&c=c3
+// a: a3, b: b3, c: c3
+###
+POST http://localhost:8080/study2/example4
+Header-A: a4
+Header-B: b4
+// a: a4, b: b4
